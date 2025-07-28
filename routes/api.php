@@ -9,6 +9,9 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 Route::prefix('v1')->group(function () {
+    Route::middleware('auth:sanctum')->group(function () {
+        Route::post('/logout', [SessionController::class, 'logout']);
+    });
     Route::post('/login', [SessionController::class, 'login']);
     Route::post('/register', [SessionController::class, 'register']);
 });

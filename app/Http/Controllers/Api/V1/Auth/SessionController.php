@@ -5,6 +5,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\LoginRequest;
 use App\Http\Requests\RegisterRequest;
 use App\Models\User;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class SessionController extends Controller
@@ -33,6 +34,14 @@ class SessionController extends Controller
             'access_token' => $token,
             'token_type'   => 'Bearer',
             'user'         => $user,
+        ]);
+    }
+
+    public function logout(Request $request)
+    {
+        $request->user()->currentAccessToken()->delete();
+        return response()->json([
+            'message' => 'Successfully logged out',
         ]);
     }
 
