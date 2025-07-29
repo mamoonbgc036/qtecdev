@@ -1,6 +1,11 @@
 # 🛠️ Service Booking System - Laravel REST API
 
-A basic API-driven Service Booking System built using **Laravel 10** and **Sanctum**. Customers can register, view services, and book them. Admins can manage services and view all bookings.
+A basic API-driven Service Booking System built using **Laravel 12** and **Sanctum token based authtication**. Customers can register, view services, and book them. Admins can manage services and view all bookings.
+
+---
+# 🛠️ Live Endpoint
+
+https://beta.rentandrooms.com/
 
 ---
 
