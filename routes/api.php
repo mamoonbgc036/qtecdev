@@ -14,6 +14,7 @@ Route::prefix('v1')->group(function () {
         Route::get('/services', [ServiceController::class, 'index']);
         Route::post('/booking', [BookingController::class, 'store']);
         Route::get('/booking', [BookingController::class, 'index']);
+        // Admin routes
         Route::middleware(['admin'])->group(function () {
             Route::apiResource('services', ServiceController::class);
             Route::get('admin/booking', [BookingController::class, 'index']);

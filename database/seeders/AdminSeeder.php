@@ -1,5 +1,4 @@
 <?php
-
 namespace Database\Seeders;
 
 use App\Models\User;
@@ -14,10 +13,15 @@ class AdminSeeder extends Seeder
     public function run(): void
     {
         User::create([
-            'name' => 'Admin',
-            'email' => 'admin@admin.com',
+            'name'     => 'Admin',
+            'email'    => 'admin@admin.com',
             'password' => Hash::make('1234'),
-            'role' => 'admin', // Assigning the role as admin])
+            'role'     => 'admin',
+        ]);
+        User::create([
+            'name'     => 'Admin',
+            'email'    => 'user@user.com',
+            'password' => Hash::make('1234'),
         ]);
     }
 }
