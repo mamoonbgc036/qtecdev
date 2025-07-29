@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\V1\Auth\SessionController;
+use App\Http\Controllers\Api\V1\ServiceController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,4 +15,5 @@ Route::prefix('v1')->group(function () {
     });
     Route::post('/login', [SessionController::class, 'login']);
     Route::post('/register', [SessionController::class, 'register']);
+    Route::apiResource('services', ServiceController::class);
 });
