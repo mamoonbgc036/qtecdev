@@ -37,11 +37,10 @@ A basic API-driven Service Booking System built using **Laravel 10** and **Sanct
 
 ## ⚙️ Requirements
 
-- PHP >= 8.1
+- PHP >= 8.2
 - Composer
 - Laravel >= 10
 - MySQL
-- Node.js & NPM (for frontend assets if needed)
 - Git
 
 ---
@@ -52,3 +51,29 @@ A basic API-driven Service Booking System built using **Laravel 10** and **Sanct
 ```bash
 git clone https://github.com/your-username/service-booking-system.git
 cd service-booking-system
+````
+
+### 1. Install Dependency
+```bash
+composer install
+```
+### 1. Create Application key
+```bash
+php artisan key:generate
+```
+### 1. Configure Database
+```bash
+create database in mysql and rename .env.example to .env and put dbname and credentials in .env
+```
+### 1. Migration and Seed
+```bash
+php artisan migrate --seed
+```
+### 1. Run and Browse
+```bash
+php artisan serve
+```
+### 1. Import postman.json file
+```bash
+Import postman.json file in postman from project root and test
+```
