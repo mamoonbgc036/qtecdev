@@ -57,23 +57,23 @@ cd service-booking-system
 ```bash
 composer install
 ```
-### 1. Create Application key
+### 2. Create Application key
 ```bash
 php artisan key:generate
 ```
-### 1. Configure Database
+### 3. Configure Database
 ```bash
 create database in mysql and rename .env.example to .env and put dbname and credentials in .env
 ```
-### 1. Migration and Seed
+### 4. Migration and Seed
 ```bash
 php artisan migrate --seed
 ```
-### 1. Run and Browse
+### 5. Run and Browse
 ```bash
 php artisan serve
 ```
-### 1. Import postman.json file
+### 6. Import postman.json file
 ```bash
 Import postman.json file in postman from project root and test
 ```
