@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -43,7 +42,16 @@ class User extends Authenticatable
     {
         return [
             'email_verified_at' => 'datetime',
-            'password' => 'hashed',
+            'password'          => 'hashed',
         ];
+    }
+
+    public function bookings()
+    {
+        return $this->hasMany(Booking::class);
+    }
+    public function isAdmin(): bool
+    {
+        return $this->role === 'admin';
     }
 }

@@ -1,5 +1,5 @@
 <?php
-namespace App\Repositories;
+namespace App\Repositories\V1;
 
 use App\Models\Service;
 use Illuminate\Database\Eloquent\Collection;

@@ -5,7 +5,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\V1\ServiceRequest;
 use App\Http\Resources\V1\Service\ServiceResource;
 use App\Models\Service;
-use App\Repositories\ServiceRepository;
+use App\Repositories\V1\ServiceRepository;
 
 class ServiceController extends Controller
 {
