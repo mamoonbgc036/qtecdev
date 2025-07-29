@@ -24,17 +24,6 @@ A basic API-driven Service Booking System built using **Laravel 10** and **Sanct
 
 ---
 
-## 📁 Project Structure Highlights
-
-- `App\Http\Controllers\Api\V1` – All versioned API Controllers
-- `App\Http\Requests\V1` – FormRequest classes for validation
-- `App\Http\Resources\V1` – API Resource for formatted responses
-- `App\Repositories` – Repository layer for business logic
-- `routes/api.php` – Versioned API routes under `/api/v1`
-- `database/seeders` – Admin and service seeding
-
----
-
 ## ⚙️ Requirements
 
 - PHP >= 8.2
